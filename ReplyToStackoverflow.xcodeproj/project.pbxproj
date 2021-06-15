@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A58FD132678EEE1007BC5D6 /* MiniPlayer for all Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A58FD122678EEE1007BC5D6 /* MiniPlayer for all Views.swift */; };
 		5A5A8CD72678C06200FACA1C /* Trackpad in SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A8CD62678C06200FACA1C /* Trackpad in SwiftUI.swift */; };
 		5AAB316F2678B96C0060D3B9 /* ReplyToStackoverflowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB316E2678B96C0060D3B9 /* ReplyToStackoverflowApp.swift */; };
 		5AAB31712678B96C0060D3B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB31702678B96C0060D3B9 /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A58FD122678EEE1007BC5D6 /* MiniPlayer for all Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MiniPlayer for all Views.swift"; sourceTree = "<group>"; };
 		5A5A8CD62678C06200FACA1C /* Trackpad in SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trackpad in SwiftUI.swift"; sourceTree = "<group>"; };
 		5AAB316B2678B96C0060D3B9 /* ReplyToStackoverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplyToStackoverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AAB316E2678B96C0060D3B9 /* ReplyToStackoverflowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyToStackoverflowApp.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				5AAB317D2678B9B40060D3B9 /* CircularView.swift */,
 				5A5A8CD62678C06200FACA1C /* Trackpad in SwiftUI.swift */,
 				5AEE394C2678DAAA0093E603 /* How to get value with EnvironmentObject.swift */,
+				5A58FD122678EEE1007BC5D6 /* MiniPlayer for all Views.swift */,
 			);
 			path = ReplyToStackoverflow;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AEE394D2678DAAA0093E603 /* How to get value with EnvironmentObject.swift in Sources */,
+				5A58FD132678EEE1007BC5D6 /* MiniPlayer for all Views.swift in Sources */,
 				5A5A8CD72678C06200FACA1C /* Trackpad in SwiftUI.swift in Sources */,
 				5AAB317E2678B9B40060D3B9 /* CircularView.swift in Sources */,
 				5AAB31712678B96C0060D3B9 /* ContentView.swift in Sources */,

@@ -4,6 +4,7 @@
 //
 //  Created by Taeeun Kim on 15.06.21.
 //
+// https://stackoverflow.com/questions/67985964/how-to-get-value-on-original-object-with-environmentobject-in-swiftui/67986236#67986236
 
 import SwiftUI
 

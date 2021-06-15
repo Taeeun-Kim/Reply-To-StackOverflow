@@ -11,6 +11,7 @@
 		5AAB31712678B96C0060D3B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB31702678B96C0060D3B9 /* ContentView.swift */; };
 		5AAB31732678B96D0060D3B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB31722678B96D0060D3B9 /* Assets.xcassets */; };
 		5AAB31762678B96D0060D3B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB31752678B96D0060D3B9 /* Preview Assets.xcassets */; };
+		5AAB317E2678B9B40060D3B9 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB317D2678B9B40060D3B9 /* CircularView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		5AAB31722678B96D0060D3B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AAB31752678B96D0060D3B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5AAB31772678B96D0060D3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AAB317D2678B9B40060D3B9 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				5AAB31722678B96D0060D3B9 /* Assets.xcassets */,
 				5AAB31772678B96D0060D3B9 /* Info.plist */,
 				5AAB31742678B96D0060D3B9 /* Preview Content */,
+				5AAB317D2678B9B40060D3B9 /* CircularView.swift */,
 			);
 			path = ReplyToStackoverflow;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAB317E2678B9B40060D3B9 /* CircularView.swift in Sources */,
 				5AAB31712678B96C0060D3B9 /* ContentView.swift in Sources */,
 				5AAB316F2678B96C0060D3B9 /* ReplyToStackoverflowApp.swift in Sources */,
 			);

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ReplyToStackoverflowApp: App {
+    var settings: GameSettings = GameSettings()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(settings)
         }
     }
 }

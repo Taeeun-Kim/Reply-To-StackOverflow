@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Trackpad in SwiftUI.swift
 //  ReplyToStackoverflow
 //
 //  Created by Taeeun Kim on 15.06.21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Trackpad_in_SwiftUI: View {
     var body: some View {
         ZStack {
             Text("Test")
@@ -21,8 +21,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Trackpad_in_SwiftUI_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Trackpad_in_SwiftUI()
     }
 }

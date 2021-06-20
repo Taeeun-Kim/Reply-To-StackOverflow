@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0A3DE7267F9962008ABC94 /* How do I get information about the phone version and phone model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A3DE6267F9962008ABC94 /* How do I get information about the phone version and phone model.swift */; };
 		5A58FD132678EEE1007BC5D6 /* MiniPlayer for all Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A58FD122678EEE1007BC5D6 /* MiniPlayer for all Views.swift */; };
 		5A5A8CD72678C06200FACA1C /* Trackpad in SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A8CD62678C06200FACA1C /* Trackpad in SwiftUI.swift */; };
 		5AAB316F2678B96C0060D3B9 /* ReplyToStackoverflowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB316E2678B96C0060D3B9 /* ReplyToStackoverflowApp.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A0A3DE6267F9962008ABC94 /* How do I get information about the phone version and phone model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "How do I get information about the phone version and phone model.swift"; sourceTree = "<group>"; };
 		5A58FD122678EEE1007BC5D6 /* MiniPlayer for all Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MiniPlayer for all Views.swift"; sourceTree = "<group>"; };
 		5A5A8CD62678C06200FACA1C /* Trackpad in SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trackpad in SwiftUI.swift"; sourceTree = "<group>"; };
 		5AAB316B2678B96C0060D3B9 /* ReplyToStackoverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplyToStackoverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				5A5A8CD62678C06200FACA1C /* Trackpad in SwiftUI.swift */,
 				5AEE394C2678DAAA0093E603 /* How to get value with EnvironmentObject.swift */,
 				5A58FD122678EEE1007BC5D6 /* MiniPlayer for all Views.swift */,
+				5A0A3DE6267F9962008ABC94 /* How do I get information about the phone version and phone model.swift */,
 			);
 			path = ReplyToStackoverflow;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0A3DE7267F9962008ABC94 /* How do I get information about the phone version and phone model.swift in Sources */,
 				5AEE394D2678DAAA0093E603 /* How to get value with EnvironmentObject.swift in Sources */,
 				5A58FD132678EEE1007BC5D6 /* MiniPlayer for all Views.swift in Sources */,
 				5A5A8CD72678C06200FACA1C /* Trackpad in SwiftUI.swift in Sources */,

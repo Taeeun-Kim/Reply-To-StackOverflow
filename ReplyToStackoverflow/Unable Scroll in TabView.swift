@@ -1,13 +1,15 @@
 //
-//  ContentView.swift
+//  Unable Scroll in TabView.swift
 //  ReplyToStackoverflow
 //
-//  Created by Taeeun Kim on 15.06.21.
+//  Created by Taeeun Kim on 03.07.21.
 //
+
+// https://stackoverflow.com/questions/68238761/how-to-stop-the-page-from-being-able-to-be-scrolled-up-and-down-while-using-a-pa/68238919#68238919
 
 import SwiftUI
 
-struct ContentView: View {
+struct Unable_Scroll_in_TabView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             TabView {
@@ -30,9 +32,8 @@ struct ContentView: View {
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct Unable_Scroll_in_TabView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Unable_Scroll_in_TabView()
     }
 }

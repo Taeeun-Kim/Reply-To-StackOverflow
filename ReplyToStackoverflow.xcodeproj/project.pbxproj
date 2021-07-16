@@ -18,6 +18,7 @@
 		5AAB31762678B96D0060D3B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB31752678B96D0060D3B9 /* Preview Assets.xcassets */; };
 		5AAB317E2678B9B40060D3B9 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB317D2678B9B40060D3B9 /* CircularView.swift */; };
 		5AEE394D2678DAAA0093E603 /* How to get value with EnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE394C2678DAAA0093E603 /* How to get value with EnvironmentObject.swift */; };
+		5AFD622226A1B13500A9D95A /* SwiftUI how to pass data to previous screen on dismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD622126A1B13500A9D95A /* SwiftUI how to pass data to previous screen on dismiss.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5AAB31772678B96D0060D3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AAB317D2678B9B40060D3B9 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 		5AEE394C2678DAAA0093E603 /* How to get value with EnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "How to get value with EnvironmentObject.swift"; sourceTree = "<group>"; };
+		5AFD622126A1B13500A9D95A /* SwiftUI how to pass data to previous screen on dismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI how to pass data to previous screen on dismiss.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				5AAB316E2678B96C0060D3B9 /* ReplyToStackoverflowApp.swift */,
 				5AAB31702678B96C0060D3B9 /* ContentView.swift */,
+				5AFD622126A1B13500A9D95A /* SwiftUI how to pass data to previous screen on dismiss.swift */,
 				5AAB31722678B96D0060D3B9 /* Assets.xcassets */,
 				5AAB31772678B96D0060D3B9 /* Info.plist */,
 				5AAB31742678B96D0060D3B9 /* Preview Content */,
@@ -164,6 +167,7 @@
 				5A58FD132678EEE1007BC5D6 /* MiniPlayer for all Views.swift in Sources */,
 				5A5A8CD72678C06200FACA1C /* Trackpad in SwiftUI.swift in Sources */,
 				5A7A6FF82690E393000D6431 /* Unable Scroll in TabView.swift in Sources */,
+				5AFD622226A1B13500A9D95A /* SwiftUI how to pass data to previous screen on dismiss.swift in Sources */,
 				5AAB317E2678B9B40060D3B9 /* CircularView.swift in Sources */,
 				5AAB31712678B96C0060D3B9 /* ContentView.swift in Sources */,
 				5AAB316F2678B96C0060D3B9 /* ReplyToStackoverflowApp.swift in Sources */,

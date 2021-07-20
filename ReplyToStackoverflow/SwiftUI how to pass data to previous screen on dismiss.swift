@@ -11,11 +11,11 @@ import SwiftUI
 
 struct SwiftUI_how_to_pass_data_to_previous_screen_on_dismiss: View {
     @State var showModel = false
-    @State var filter = Filter(fromDate: "", toDate: "")
+    @State var filter = Filter()
     
     var body: some View {
         VStack {
-            Text("\(filter.fromDate) and \(filter.toDate)")
+            Text("\(filter.fromDate ?? "no date") and \(filter.toDate ?? "no date")")
             Button(action: {
                 showModel.toggle()
             }, label: {
@@ -49,8 +49,8 @@ struct FilterView: View {
 }
 
 struct Filter {
-    var fromDate: String
-    var toDate: String
+    var fromDate: String?
+    var toDate: String?
 }
 
 struct SwiftUI_how_to_pass_data_to_previous_screen_on_dismiss_Previews: PreviewProvider {

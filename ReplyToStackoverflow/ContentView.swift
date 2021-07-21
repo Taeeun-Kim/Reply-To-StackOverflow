@@ -11,15 +11,20 @@ struct ContentView: View {
     
     private var items = ["1", "2", "3"]
     
+    init(){
+        UITableView.appearance().backgroundColor = .purple // background color of list
+    }
+    
     var body: some View {
         List {
             ForEach(items, id: \.self) { item in
                 Text(item)
-                    .listRowBackground(Color.yellow)
+                    .listRowBackground(Color.yellow) // background color of listRow
                 Text(item)
-                    .listRowBackground(Color.blue)
+                    .listRowBackground(Color.blue) // background color of listRow
             }
         }
+        .frame(width: 300, height: 600)
     }
 }
 

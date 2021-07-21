@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isSelected: Bool = false
+    
+    private var items = ["1", "2", "3"]
     
     var body: some View {
-        VStack {
-            
+        List {
+            ForEach(items, id: \.self) { item in
+                Text(item)
+                    .listRowBackground(Color.yellow)
+                Text(item)
+                    .listRowBackground(Color.blue)
+            }
         }
     }
 }

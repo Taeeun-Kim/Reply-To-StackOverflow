@@ -19,6 +19,8 @@
 		5AAB31762678B96D0060D3B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB31752678B96D0060D3B9 /* Preview Assets.xcassets */; };
 		5AAB317E2678B9B40060D3B9 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB317D2678B9B40060D3B9 /* CircularView.swift */; };
 		5AEE394D2678DAAA0093E603 /* How to get value with EnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE394C2678DAAA0093E603 /* How to get value with EnvironmentObject.swift */; };
+		5AFC7F1B26A882A600C99108 /* How to align bottom edge to Center of above view swiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC7F1A26A882A600C99108 /* How to align bottom edge to Center of above view swiftui.swift */; };
+		5AFC7F1D26A8848800C99108 /* SwiftUI- Background color of List with SidebarListStyle?.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC7F1C26A8848800C99108 /* SwiftUI- Background color of List with SidebarListStyle?.swift */; };
 		5AFD622226A1B13500A9D95A /* SwiftUI how to pass data to previous screen on dismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD622126A1B13500A9D95A /* SwiftUI how to pass data to previous screen on dismiss.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		5AAB31772678B96D0060D3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AAB317D2678B9B40060D3B9 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 		5AEE394C2678DAAA0093E603 /* How to get value with EnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "How to get value with EnvironmentObject.swift"; sourceTree = "<group>"; };
+		5AFC7F1A26A882A600C99108 /* How to align bottom edge to Center of above view swiftui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "How to align bottom edge to Center of above view swiftui.swift"; sourceTree = "<group>"; };
+		5AFC7F1C26A8848800C99108 /* SwiftUI- Background color of List with SidebarListStyle?.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI- Background color of List with SidebarListStyle?.swift"; sourceTree = "<group>"; };
 		5AFD622126A1B13500A9D95A /* SwiftUI how to pass data to previous screen on dismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI how to pass data to previous screen on dismiss.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,8 @@
 				5AA76364267FEE5A00E00618 /* Adding padding of just 1 between Text creates a huge padding - how to actually make a small padding?.swift */,
 				5A7A6FF72690E393000D6431 /* Unable Scroll in TabView.swift */,
 				5A2D960126A6579300DA8585 /* SwiftUI how do I temporarily animate a view color's foregroundColor?.swift */,
+				5AFC7F1A26A882A600C99108 /* How to align bottom edge to Center of above view swiftui.swift */,
+				5AFC7F1C26A8848800C99108 /* SwiftUI- Background color of List with SidebarListStyle?.swift */,
 			);
 			path = ReplyToStackoverflow;
 			sourceTree = "<group>";
@@ -167,7 +173,9 @@
 			files = (
 				5A0A3DE7267F9962008ABC94 /* How do I get information about the phone version and phone model.swift in Sources */,
 				5AEE394D2678DAAA0093E603 /* How to get value with EnvironmentObject.swift in Sources */,
+				5AFC7F1D26A8848800C99108 /* SwiftUI- Background color of List with SidebarListStyle?.swift in Sources */,
 				5A58FD132678EEE1007BC5D6 /* MiniPlayer for all Views.swift in Sources */,
+				5AFC7F1B26A882A600C99108 /* How to align bottom edge to Center of above view swiftui.swift in Sources */,
 				5A5A8CD72678C06200FACA1C /* Trackpad in SwiftUI.swift in Sources */,
 				5A2D960226A6579300DA8585 /* SwiftUI how do I temporarily animate a view color's foregroundColor?.swift in Sources */,
 				5A7A6FF82690E393000D6431 /* Unable Scroll in TabView.swift in Sources */,

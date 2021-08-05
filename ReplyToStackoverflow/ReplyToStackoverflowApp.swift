@@ -15,6 +15,7 @@ struct ReplyToStackoverflowApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(contentVM)
+                .background(Color.red)
         }
     }
 }

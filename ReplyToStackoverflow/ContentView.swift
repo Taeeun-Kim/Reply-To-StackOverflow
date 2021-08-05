@@ -7,27 +7,49 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
-    private var items = ["1", "2", "3"]
-    
-    init(){
-        UITableView.appearance().backgroundColor = .purple // background color of list
-    }
-    
+struct ContentView : View {
     var body: some View {
-        List {
-            ForEach(items, id: \.self) { item in
-                Text(item)
-                    .listRowBackground(Color.yellow) // background color of listRow
-                Text(item)
-                    .listRowBackground(Color.blue) // background color of listRow
-            }
-        }
-        .frame(width: 300, height: 600)
+
+        GradientCircle()
     }
 }
 
+struct HueRotationAnimation: ViewModifier {
+    @State var hueRotationValue: Double
+    func body(content: Content) -> some View {
+        content
+            .hueRotation(Angle(degrees: hueRotationValue))
+            .onAppear() {
+                DispatchQueue.main.async {
+                    withAnimation(.linear(duration: 20).repeatForever(autoreverses: false)) {
+                        hueRotationValue += 360
+                    }
+                }
+            }
+    }
+}
+
+struct GradientCircle: View {
+    var gradient: Gradient
+    @State var hueRotationValue: Double = Double.random(in: 0..<360)
+    
+    var body: some View {
+        GeometryReader { geometry in
+            Circle()
+                .fill(
+                    radialGradient(geometry: geometry, gradient: gradient)
+                )
+                .modifier(HueRotationAnimation(hueRotationValue: hueRotationValue))
+        }
+    }
+}
+
+func radialGradient(geometry: GeometryProxy, gradient: Gradient) -> RadialGradient {
+    RadialGradient(gradient: gradient,
+                   center: .init(x: 0.82, y: 0.85),
+                   startRadius: 0.0,
+                   endRadius: max(geometry.size.width, geometry.size.height) * 0.8)
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

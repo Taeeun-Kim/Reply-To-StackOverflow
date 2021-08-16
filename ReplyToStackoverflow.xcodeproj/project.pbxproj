@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A05F18B26CA896800DAA181 /* How to stick my custom Tab to the bottom on every Iphone (with and without SafeArea)?.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A05F18A26CA896800DAA181 /* How to stick my custom Tab to the bottom on every Iphone (with and without SafeArea)?.swift */; };
 		5A0A3DE7267F9962008ABC94 /* How do I get information about the phone version and phone model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A3DE6267F9962008ABC94 /* How do I get information about the phone version and phone model.swift */; };
 		5A2D960226A6579300DA8585 /* SwiftUI how do I temporarily animate a view color's foregroundColor?.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D960126A6579300DA8585 /* SwiftUI how do I temporarily animate a view color's foregroundColor?.swift */; };
 		5A58FD132678EEE1007BC5D6 /* MiniPlayer for all Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A58FD122678EEE1007BC5D6 /* MiniPlayer for all Views.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A05F18A26CA896800DAA181 /* How to stick my custom Tab to the bottom on every Iphone (with and without SafeArea)?.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "How to stick my custom Tab to the bottom on every Iphone (with and without SafeArea)?.swift"; sourceTree = "<group>"; };
 		5A0A3DE6267F9962008ABC94 /* How do I get information about the phone version and phone model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "How do I get information about the phone version and phone model.swift"; sourceTree = "<group>"; };
 		5A2D960126A6579300DA8585 /* SwiftUI how do I temporarily animate a view color's foregroundColor?.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI how do I temporarily animate a view color's foregroundColor?.swift"; sourceTree = "<group>"; };
 		5A58FD122678EEE1007BC5D6 /* MiniPlayer for all Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MiniPlayer for all Views.swift"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				5AAB316E2678B96C0060D3B9 /* ReplyToStackoverflowApp.swift */,
 				5AAB31702678B96C0060D3B9 /* ContentView.swift */,
+				5A05F18A26CA896800DAA181 /* How to stick my custom Tab to the bottom on every Iphone (with and without SafeArea)?.swift */,
 				5A5C16D426C790AC00FF3B63 /* PageTabViewStyle Right to left.swift */,
 				5AFD622126A1B13500A9D95A /* SwiftUI how to pass data to previous screen on dismiss.swift */,
 				5AAB31722678B96D0060D3B9 /* Assets.xcassets */,
@@ -182,6 +185,7 @@
 				5AFC7F1B26A882A600C99108 /* How to align bottom edge to Center of above view swiftui.swift in Sources */,
 				5A5A8CD72678C06200FACA1C /* Trackpad in SwiftUI.swift in Sources */,
 				5A2D960226A6579300DA8585 /* SwiftUI how do I temporarily animate a view color's foregroundColor?.swift in Sources */,
+				5A05F18B26CA896800DAA181 /* How to stick my custom Tab to the bottom on every Iphone (with and without SafeArea)?.swift in Sources */,
 				5A7A6FF82690E393000D6431 /* Unable Scroll in TabView.swift in Sources */,
 				5AFD622226A1B13500A9D95A /* SwiftUI how to pass data to previous screen on dismiss.swift in Sources */,
 				5AAB317E2678B9B40060D3B9 /* CircularView.swift in Sources */,

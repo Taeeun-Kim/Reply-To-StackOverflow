@@ -6,12 +6,33 @@
 //
 
 import SwiftUI
-import Foundation
-import UIKit
 
 struct ContentView: View {
+    
+    @State var number: Int = 1
+    
     var body: some View {
-        Text("ff")
+        VStack {
+            if number <= 15 {
+                Text("\(number)")
+                    .foregroundColor(.green)
+                    .font(.system(size: 50))
+                    .fontWeight(.bold)
+            }
+            
+            Button {
+               number += 1
+            } label: {
+                Text("Add Number")
+                    .foregroundColor(.blue)
+                    .font(.system(size: 25))
+                    .fontWeight(.bold)
+            }
+        }
+        .padding()
+        .background(Color.yellow)
+        .cornerRadius(30)
+        .shadow(color: .gray, radius: 10, x: 5, y: 5)
     }
 }
 

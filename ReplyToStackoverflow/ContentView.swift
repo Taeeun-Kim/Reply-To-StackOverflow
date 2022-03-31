@@ -36,6 +36,31 @@ struct ContentView: View {
     }
 }
 
+@available(iOS 15, *)
+struct Calendar: View {
+    @StateObject var viewModel = CalendarViewModel()
+    
+    var body: some View {
+        VStack {
+            Text(viewModel.fetchDate())
+            Text("test")
+        }
+    }
+}
+    
+
+@available(iOS 15, *)
+class CalendarViewModel: ObservableObject {
+    
+    @Published var selectDate = Date.now
+    private let formatter = DateFormatter()
+    
+    func fetchDate() -> String {
+            formatter.string(from: selectDate)
+        // i want to pass selectDate to here in "dd-mm-yyyy" format as string
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

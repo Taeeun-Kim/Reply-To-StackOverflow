@@ -9,55 +9,83 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var number: Int = 1
-    
+    @Environment(\.presentationMode) var presentationMode
+    @AppStorage("shouldDismiss") var shouldDismiss: Bool = false
+    @State private var isShowingSecondView = false
+    @State private var isShowingForthView = false
+
     var body: some View {
         VStack {
-            if number <= 15 {
-                Text("\(number)")
-                    .foregroundColor(.green)
-                    .font(.system(size: 50))
-                    .fontWeight(.bold)
-            }
+            Text("FirstView")
             
-            Button {
-               number += 1
-            } label: {
-                Text("Add Number")
-                    .foregroundColor(.blue)
-                    .font(.system(size: 25))
-                    .fontWeight(.bold)
+            Button("Go to SecondView") {
+                isShowingSecondView.toggle()
+            }
+            .sheet(isPresented: $isShowingSecondView) {
+                SecondView()
+                    .onDisappear(perform: {
+                        if shouldDismiss {
+                            presentationMode.wrappedValue.dismiss()
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                isShowingForthView = true
+                            }
+                        }
+                    })
+            }
+            .sheet(isPresented: $isShowingForthView) {
+                ForthView()
             }
         }
-        .padding()
-        .background(Color.yellow)
-        .cornerRadius(30)
-        .shadow(color: .gray, radius: 10, x: 5, y: 5)
     }
 }
 
-@available(iOS 15, *)
-struct Calendar: View {
-    @StateObject var viewModel = CalendarViewModel()
+struct SecondView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    @AppStorage("shouldDismiss") var shouldDismiss: Bool = false
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                Text("SecondView")
+                
+                NavigationLink(
+                    "Go To ThirdView",
+                    destination: ThirdView()
+                        .onDisappear(perform: {
+                            if shouldDismiss {
+                                presentationMode.wrappedValue.dismiss()
+                            }
+                        })
+                )
+            }
+        }
+    }
+}
+
+struct ThirdView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    @AppStorage("shouldDismiss") var shouldDismiss: Bool = false
     
     var body: some View {
         VStack {
-            Text(viewModel.fetchDate())
-            Text("test")
+            Text("ThirdView")
+            
+            Button("Go to FirstView and open ForthView") {
+                shouldDismiss = true
+                presentationMode.wrappedValue.dismiss()
+            }
         }
     }
 }
-    
 
-@available(iOS 15, *)
-class CalendarViewModel: ObservableObject {
+struct ForthView: View {
     
-    @Published var selectDate = Date.now
-    private let formatter = DateFormatter()
-    
-    func fetchDate() -> String {
-            formatter.string(from: selectDate)
-        // i want to pass selectDate to here in "dd-mm-yyyy" format as string
+    var body: some View {
+        VStack {
+            Text("ForthView")
+        }
     }
 }
 

@@ -7,14 +7,12 @@
 
 import SwiftUI
 
-@available(iOS 15, *)
 @main
 struct ReplyToStackoverflowApp: App {
-    var contentVM: ContentViewModel = ContentViewModel()
     
     var body: some Scene {
         WindowGroup {
-            Calendar()
+            ContentView()
         }
     }
 }

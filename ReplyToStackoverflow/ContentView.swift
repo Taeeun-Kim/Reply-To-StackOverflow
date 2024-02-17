@@ -13,78 +13,103 @@ struct ContentView: View {
     @AppStorage("shouldDismiss") var shouldDismiss: Bool = false
     @State private var isShowingSecondView = false
     @State private var isShowingForthView = false
-
-    var body: some View {
-        VStack {
-            Text("FirstView")
-            
-            Button("Go to SecondView") {
-                isShowingSecondView.toggle()
-            }
-            .sheet(isPresented: $isShowingSecondView) {
-                SecondView()
-                    .onDisappear(perform: {
-                        if shouldDismiss {
-                            presentationMode.wrappedValue.dismiss()
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                                isShowingForthView = true
-                            }
-                        }
-                    })
-            }
-            .sheet(isPresented: $isShowingForthView) {
-                ForthView()
-            }
-        }
-    }
-}
-
-struct SecondView: View {
     
-    @Environment(\.presentationMode) var presentationMode
-    @AppStorage("shouldDismiss") var shouldDismiss: Bool = false
+    init() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .clear
+        appearance.shadowColor = .clear
+        
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
     
     var body: some View {
         NavigationView {
             VStack {
-                Text("SecondView")
-                
-                NavigationLink(
-                    "Go To ThirdView",
-                    destination: ThirdView()
-                        .onDisappear(perform: {
-                            if shouldDismiss {
-                                presentationMode.wrappedValue.dismiss()
-                            }
-                        })
-                )
+                ScrollView {
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                    Text("fasf")
+                }
             }
-        }
-    }
-}
+            .navigationBarTitle("Element", displayMode: .inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+    //                Menu {
+    //                    Button(action: { }) {
+    //                        Label("Show All", systemImage: "line.3.horizontal")
+    //                    }
+    //                }
+                    Button {
+                        
+                    } label: {
+                        Text("fwqhfwq")
+                    }
 
-struct ThirdView: View {
-    
-    @Environment(\.presentationMode) var presentationMode
-    @AppStorage("shouldDismiss") var shouldDismiss: Bool = false
-    
-    var body: some View {
-        VStack {
-            Text("ThirdView")
-            
-            Button("Go to FirstView and open ForthView") {
-                shouldDismiss = true
-                presentationMode.wrappedValue.dismiss()
+                }
             }
-        }
-    }
-}
-
-struct ForthView: View {
-    
-    var body: some View {
-        VStack {
-            Text("ForthView")
         }
     }
 }

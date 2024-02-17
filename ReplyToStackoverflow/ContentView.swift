@@ -27,88 +27,22 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                ScrollView {
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                    Text("fasf")
-                }
-            }
-            .navigationBarTitle("Element", displayMode: .inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-    //                Menu {
-    //                    Button(action: { }) {
-    //                        Label("Show All", systemImage: "line.3.horizontal")
-    //                    }
-    //                }
-                    Button {
-                        
-                    } label: {
-                        Text("fwqhfwq")
-                    }
-
-                }
+            VStack(spacing: 100) {
+                Text("First button")
+                    .gesture(
+                        DragGesture()
+                            .onEnded { _ in
+                                print("First button tapped")
+                            }
+                    )
+                
+                Text("Second button")
+                    .simultaneousGesture(
+                        DragGesture()
+                            .onEnded { _ in
+                                print("Second button tapped")
+                            }
+                    )
             }
         }
     }

@@ -6,36 +6,28 @@
 //
 
 import SwiftUI
+import AVKit
 
-struct ContentView: View {
-    
-    var body: some View {
-        VStack(spacing: 100) {
-            Text("First button")
-                .gesture(
-                    DragGesture(minimumDistance: 0)
-                        .onChanged { _ in
-                            print("First button is dragging")
-                        }
-                        .onEnded { _ in
-                            print("First button tapped")
-                        }
-                )
-            
-            Text("Second button")
-                .simultaneousGesture(
-                    DragGesture(minimumDistance: 0)
-                        .onChanged { _ in
-                            print("Second button is dragging")
-                        }
-                        .onEnded { _ in
-                            print("Second button tapped")
-                        }
-                )
+    struct ContentView: View {
+        
+        let bottomId = 50
+        
+        var body: some View {
+            ScrollViewReader { proxy in
+                List {
+                    Button {
+                        proxy.scrollTo(bottomId)
+                    } label: {
+                        Text("Goto bottom")
+                    }
+                    
+                    Text("bottom")
+                        .id(bottomId)
+                }
+            }
         }
     }
-}
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}

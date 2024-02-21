@@ -11,7 +11,7 @@ import SwiftUI
 struct ReplyToStackOverflow2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DummyView()
         }
     }
 }
